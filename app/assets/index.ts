@@ -10,8 +10,10 @@ import brightness from './brightness.svg'
 import logout from './logout.svg'
 import discount from './discount-shape.svg'
 import arrowRight from './arrow-right.svg'
+import calendar from './calendar.svg'
+import bell from './bell.svg'
+import search from './search.svg'
+import userImage from './user.jpeg'
+import arrowDown from './arrowDown.svg'
 
-
-
-
-export {arrowRight, box, logo, discount, category, moon, logout, trendUp, settings,  profile, infoCircle, brightness };
+export { arrowRight, arrowDown,userImage, bell, calendar, box, logo, discount, category, moon, logout, trendUp, search, settings, profile, infoCircle, brightness };
