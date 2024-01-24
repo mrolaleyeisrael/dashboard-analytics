@@ -24,7 +24,7 @@ const Navigation = () => {
           <div className=' flex flex-col justify-center items-center gap-4'>
             {NavigationItems.map((item: NavigationItemsProp) => (
               <div key={item.linkName} className=' py-2 w-full flex items-center justify-center '>
-                <Image src={item.icon} alt={item.linkName} className=' h-8 w-8 curpoint  ' />
+                <Image src={item.icon} alt={item.linkName} className=' h-8 w-8 cursor-pointer  ' />
               </div>
             ))}
           </div>
