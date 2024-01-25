@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { brightness, moon, logo, settings, arrowRight, logout } from '@/app/assets'
 import { NavigationItems, lowerNavigation } from '@/app/data/navigation'
 import { NavigationItemsProp } from '@/app/data/navigation'
@@ -10,15 +11,15 @@ import { NavigationItemsProp } from '@/app/data/navigation'
 
 const Navigation = () => {
   return (
-    <div className=' md:h-screen' >
+    <div className=' h-screen md:w-[80px] z-90 bg-white  ' >
 
-      <div className=' h-full flex justify-between flex-col bg-[#F7F8FA]  '>
-        <div className=' flex flex-col justify-center items-center'>
+      <div className=' h-full fixed flex  justify-between flex-col bg-[#F7F8FA]    '>
+        <div className=' flex flex-col justify-center items-center px-3 pt-5'>
 
           {/* logo */}
-          <div className=' p-5 '>
-            <Image src={logo} alt='Logo' className=' ' />
-          </div>
+          <Link href={'/'} className=' mb-5 '>
+            <Image src={logo} alt='Logo' className=' h-12 w-12 ' />
+          </Link>
 
           {/* nav items */}
           <div className=' flex flex-col justify-center items-center gap-4'>

@@ -15,5 +15,14 @@ import bell from './bell.svg'
 import search from './search.svg'
 import userImage from './user.jpeg'
 import arrowDown from './arrowDown.svg'
+import greenTrend from './green-uptrend.svg'
+import downTrend from './downTrend.svg'
+import order from './order.svg'
+import refund from './refund.svg'
+import cart from './shopping-cart.svg'
+import income from './coin.svg'
+import ArrowDown from './ArrowAdown.svg'
+import greenChart from './greenCgart.svg'
+import redChart from './redChart.svg'
 
-export { arrowRight, arrowDown,userImage, bell, calendar, box, logo, discount, category, moon, logout, trendUp, search, settings, profile, infoCircle, brightness };
+export { redChart, greenChart, arrowRight, arrowDown, ArrowDown, userImage, bell, calendar, box, logo, discount, category, moon, logout, trendUp, search, settings, profile, infoCircle, brightness, greenTrend, refund, order, cart, income, downTrend };

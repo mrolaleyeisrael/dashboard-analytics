@@ -7,21 +7,21 @@ import Profile from '../Profile'
 
 const ProfileNavigation = () => {
   return (
-    <div className=' w-full text-black bg-white px-5 py-[18px] border-b flex items-center justify-between  '>
+    <div className=' w-full text-black bg-white md:px-5 px-3 md:py-[18px] py-3 border-b flex items-center justify-between absolute left-0 top-0 right-0 z-50  '>
 
       <h1>Dashboard</h1>
 
-      <div className=' flex gap-5 items-center '>
+      <div className=' flex lg:gap-5 gap-2 items-center  '>
         <Search />
 
         {/* date */}
-        <div className=' flex px-4 gap-[10px] '>
+        <div className=' sm:flex hidden px-4 gap-[10px] '>
           <Image src={calendar} alt='Calendar' />
           <p>November 15, 2023</p>
         </div>
 
         
-        <div className=' p-2 rounded-full border'>
+        <div className='  p-2 rounded-full border'>
           <Image src={bell} alt='Notification' className='' />
         </div>
 
