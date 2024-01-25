@@ -19,7 +19,7 @@
   // Custom shape
 
 // function to add border - radius to the top of each bar
- const RoundedBar = (props) => {
+ const RoundedBar = (props:any) => {
    const { x, y, width, height } = props;
    const borderRadius = 5; // Adjust the border-radius value as needed
 
