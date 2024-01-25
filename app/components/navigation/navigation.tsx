@@ -11,7 +11,7 @@ import { NavigationItemsProp } from '@/app/data/navigation'
 
 const Navigation = () => {
   return (
-    <div className=' h-screen md:w-[80px] z-90 bg-white  ' >
+    <div className=' hidden lg:block h-screen md:w-[80px] z-90 bg-white  ' >
 
       <div className=' h-full fixed flex  justify-between flex-col bg-[#F7F8FA]    '>
         <div className=' flex flex-col justify-center items-center px-3 pt-5'>
