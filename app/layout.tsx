@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, Plus_Jakarta_Sans  } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
 
 const plus_jakarta_sans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -15,8 +16,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={plus_jakarta_sans.className}>{children}</body>
-    </html>
+      <html lang="en">
+        <body className={plus_jakarta_sans.className}>
+          {children}
+        </body>
+      </html>
   );
 }

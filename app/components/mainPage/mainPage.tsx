@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import { ArrowDown } from '@/app/assets'
@@ -5,10 +6,12 @@ import ProfileNavigation from '../profileNavigation/profileNavigation'
 import TransactionCard from '../TransactionCard'
 import BarCharts from '../BarCharts'
 import BarChartHeadings from '../BarChartHeadings'
+import { useTheme } from 'next-themes'
 
 const MainPage = () => {
+  const { theme, setTheme } = useTheme()
   return (
-    <section className='  relative w-full '>
+    <section className=' pl-[80px] z-10  w-full '>
       <ProfileNavigation />
 
       <section className=' p-5 text-black flex flex-col h-full overflow-scroll w-full md:pt-28 pt-20  '>
@@ -17,7 +20,7 @@ const MainPage = () => {
           {/* chart container  */}
           <div className='  w-full lg:col-span-5 space-y-4 bg-white shadow-md h-full rounded-[14px] nd:px-[20px] px-2 pt-4 border border-gray-100/90  '>
 
-           <BarChartHeadings />
+            <BarChartHeadings />
 
             <BarCharts />
           </div>
@@ -26,6 +29,10 @@ const MainPage = () => {
             <TransactionCard />
           </div>
         </div>
+      </section>
+
+      <section>
+      
       </section>
 
 

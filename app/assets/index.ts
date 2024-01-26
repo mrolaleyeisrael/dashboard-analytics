@@ -24,5 +24,9 @@ import income from './coin.svg'
 import ArrowDown from './ArrowAdown.svg'
 import greenChart from './greenCgart.svg'
 import redChart from './redChart.svg'
+import brightness2 from './brightness2.svg'
+import moon2 from './moon2.svg'
+import bell2 from './bell2.svg'
+import blackCategory from './blackCategory.svg'
 
-export { redChart, greenChart, arrowRight, arrowDown, ArrowDown, userImage, bell, calendar, box, logo, discount, category, moon, logout, trendUp, search, settings, profile, infoCircle, brightness, greenTrend, refund, order, cart, income, downTrend };
+export { redChart, bell2, moon2, brightness2, greenChart, arrowRight, arrowDown, ArrowDown, userImage, bell, calendar, box, logo, discount, category, moon, logout, trendUp, search, settings, profile, infoCircle, brightness, greenTrend, refund, order, cart, income, downTrend, blackCategory };

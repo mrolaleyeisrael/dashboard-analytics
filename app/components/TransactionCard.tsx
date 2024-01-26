@@ -10,7 +10,7 @@ const TransactionCard = () => {
   return (
     <>
       {totals.map((total) => (
-        <div key={total.digit} className=' h-fit p-4 rounded-[14px] flex flex-col gap-[10px] border border-gray-200/50 bg-white shadow-md '>
+        <div key={total.digit} className=' h-fit p-4 rounded-[14px] flex flex-col gap-[10px] border border-gray-200/50 dark:border-[#333] bg-white dark:bg-[#322929] shadow-md '>
 
           <div className='flex justify-between'>
             <p className=' p-2 rounded-full border border-[#E6E6E6] w-fit '>
@@ -23,7 +23,7 @@ const TransactionCard = () => {
           </div>
           <div className=' space-y-[5px]'>
             <h1 className=' text-lg text-[#898989]'>Total Refund</h1>
-            <p className=' font-semibold text-2xl'>{total.digit}</p>
+            <p className=' dark:text-white font-semibold text-2xl'>{total.digit}</p>
           </div>
           <div className=' flex justify-between '>
 
