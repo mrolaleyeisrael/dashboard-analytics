@@ -13,7 +13,7 @@ const TransactionCard = () => {
         <div key={total.digit} className=' h-fit p-4 rounded-[14px] flex flex-col gap-[10px] border border-gray-200/50 dark:border-[#333] bg-white dark:bg-[#322929] shadow-md '>
 
           <div className='flex justify-between'>
-            <p className=' p-2 rounded-full border border-[#E6E6E6] w-fit '>
+            <p className=' p-2 rounded-full border border-[#E6E6E6] w-fit dark:border-[#34CAA5]/50 '>
               <Image src={total.icon} alt='icon' className='' />
             </p>
 

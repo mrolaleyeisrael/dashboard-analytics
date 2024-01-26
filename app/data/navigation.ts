@@ -1,4 +1,4 @@
-import { box, category, profile, trendUp, discount, infoCircle, arrowRight, logout, settings } from "../assets"
+import { box, category, profile, trendUp, discount, infoCircle, arrowRight, logout, settings, brightness, brightness2, moon, moon2 } from "../assets"
 
 
 export type NavigationItemsProp = {
@@ -52,5 +52,30 @@ export const lowerNavigation = [
   {
     icon: logout,
     linkName: "Logout"
+  },
+]
+
+export const themeNavigation = [
+  {
+    icon: brightness,
+    linkName: "Light Mode"
+  },
+
+  {
+    icon: moon2,
+    linkName: "Dark Mode"
+  },
+]
+
+
+export const themeNavigation2 = [
+  {
+    icon: brightness2,
+    linkName: "Light Mode"
+  },
+
+  {
+    icon: moon,
+    linkName: "Dark Mode"
   },
 ]

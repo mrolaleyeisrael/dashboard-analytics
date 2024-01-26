@@ -28,5 +28,11 @@ import brightness2 from './brightness2.svg'
 import moon2 from './moon2.svg'
 import bell2 from './bell2.svg'
 import blackCategory from './blackCategory.svg'
-
-export { redChart, bell2, moon2, brightness2, greenChart, arrowRight, arrowDown, ArrowDown, userImage, bell, calendar, box, logo, discount, category, moon, logout, trendUp, search, settings, profile, infoCircle, brightness, greenTrend, refund, order, cart, income, downTrend, blackCategory };
+import marcus from './marcus.svg'
+import cooper from './cooper.svg'
+import corey from './corey.svg'
+import phillip from './phillip.svg'
+import jaydon from './jaydon.svg'
+import arrowDown2 from './arrowDown2.svg'
+import calendar2 from './calendar2.svg'
+export { arrowDown2, marcus, jaydon, phillip, corey, cooper, redChart, bell2, moon2, brightness2, greenChart, calendar2, arrowRight, arrowDown, ArrowDown, userImage, bell, calendar, box, logo, discount, category, moon, logout, trendUp, search, settings, profile, infoCircle, brightness, greenTrend, refund, order, cart, income, downTrend, blackCategory };
