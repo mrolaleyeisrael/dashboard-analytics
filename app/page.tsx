@@ -6,10 +6,14 @@ import Navigation from "./components/navigation/navigation";
 import { ThemeProvider, useTheme } from "next-themes";
 import ProfileNavigation from "./components/profileNavigation/profileNavigation";
 import MobileNav from "./components/MobileNav";
+import { useStore, StoreState } from "./store/store";
+import ProfileMenu from "./components/profileMenu";
 export default function Home() {
 
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
+  const { openMenu }: StoreState = useStore() as StoreState;
+
 
   useEffect(() => {
     setMounted(true)
@@ -23,16 +27,19 @@ export default function Home() {
   return (
     <ThemeProvider attribute="class"  >
       <main className=" relative w-full  ">
-        <MobileNav />
+
+        {
+          openMenu && <MobileNav />
+        }
         <ProfileNavigation />
         <div className=" flex flex-row h-screen">
           <Navigation />
           <MainPage />
         </div>
 
-        <div className=" h-10 w-10 bg-white/30 bottom-0 absolute left-0 " >
-          M
-        </div>
+
+
+        {/* <ProfileMenu /> */}
       </main>
     </ThemeProvider>
   );

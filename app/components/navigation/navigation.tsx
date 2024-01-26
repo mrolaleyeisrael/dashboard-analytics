@@ -17,7 +17,7 @@ const Navigation = () => {
 
   return (
 
-    <div className=' hidden lg:flex z-50 border-r dark:border-r-zinc-600/90 fixed h-screen md:w-[80px] justify-between flex-col bg-[#F7F8FA] dark:bg-zinc-900    '>
+    <div className=' hidden lg:flex z-50 border-r dark:border-r-zinc-600/90 fixed h-screen md:w-[80px] justify-between flex-col bg-[#F7F8FA] dark:bg-zinc-900   '>
       <div className=' flex flex-col justify-center items-center px-3 pt-5'>
 
         {/* logo */}
@@ -39,7 +39,7 @@ const Navigation = () => {
         </div>
 
         {/* theme buttons */}
-        <div className='flex flex-col justify-between items-center w-fit bg-white p-1 rounded-full gap-4 mt-4 '>
+        <div className='flex flex-col justify-between items-center w-fit bg-white dark:bg-[#322929] p-1 rounded-full gap-4 mt-4 '>
           <div className={` p-1   rounded-full hover:bg-green-300/50 ${theme == 'light' ? 'bg-[#34CAA5]' : ''} `} onClick={() => setTheme('light')}>
             {
               theme == 'dark' ?
@@ -61,7 +61,6 @@ const Navigation = () => {
         {
           lowerNavigation.map((item) => (
             <div className=' p-2' key={item.linkName}>
-
               <Image src={item.icon} alt={item.linkName} className=' cursor-pointer ' />
             </div>
           ))
