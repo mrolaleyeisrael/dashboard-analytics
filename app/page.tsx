@@ -6,13 +6,21 @@ import Navigation from "./components/navigation/navigation";
 import { ThemeProvider, useTheme } from "next-themes";
 import ProfileNavigation from "./components/profileNavigation/profileNavigation";
 import MobileNav from "./components/MobileNav";
-import { useStore, StoreState } from "./store/store";
+import { useStore, StoreState, useModalStore } from "./store/store";
 import ProfileMenu from "./components/profileMenu";
+import ModalComponent from "./components/ModalComponent";
 export default function Home() {
+
+  interface ModalStore {
+    isOpen: boolean;
+    toggleModal: () => void;
+  }
 
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
   const { openMenu }: StoreState = useStore() as StoreState;
+  const { isOpen, toggleModal } = useModalStore() as ModalStore;
+
 
 
   useEffect(() => {
@@ -37,6 +45,11 @@ export default function Home() {
           <MainPage />
         </div>
 
+
+        {
+          isOpen &&
+          <ModalComponent />
+        }
 
 
         {/* <ProfileMenu /> */}

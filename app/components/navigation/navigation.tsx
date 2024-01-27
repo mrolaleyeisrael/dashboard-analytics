@@ -17,7 +17,7 @@ const Navigation = () => {
 
   return (
 
-    <div className=' hidden lg:flex z-50 border-r dark:border-r-zinc-600/90 fixed h-screen md:w-[80px] justify-between flex-col bg-[#F7F8FA] dark:bg-zinc-900   '>
+    <div className=' transition-all duration-200 ease-linear hidden lg:flex z-50 border-r dark:border-r-zinc-600/90 fixed h-screen md:w-[80px] justify-between flex-col bg-[#F7F8FA] dark:bg-zinc-900   '>
       <div className=' flex flex-col justify-center items-center px-3 pt-5'>
 
         {/* logo */}

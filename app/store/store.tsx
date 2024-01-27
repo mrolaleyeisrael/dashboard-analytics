@@ -5,8 +5,22 @@ export interface StoreState {
   profileMenu: boolean;
 }
 
+interface ModalStore {
+  isOpen: boolean;
+  toggleModal: () => void;
+}
+
+
+export const useModalStore = create((set) => ({
+  isOpen: true ,
+  toggleModal: () => set((state: ModalStore) => ({ isOpen: !state.isOpen })),
+}));
+
+
+
 export const useStore = create((set) => ({
   openMenu: false,
+  profileMenu: false, // Assuming you want to initialize profileMenu to false
   toggleMenu: () => set((state: StoreState) => ({ openMenu: !state.openMenu })),
-  toggleProfileMenu: () => set
+  toggleProfileMenu: () => set((state: StoreState) => ({ profileMenu: !state.profileMenu })),
 }));

@@ -2,6 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import { userImage } from '../assets'
 import { orderData } from '../data/lastOrders'
+import { useModalStore } from "../store/store";
+
 const Table = () => {
   return (
     <div className=' h-fit overflow-auto lg:col-span-5 bg-white dark:bg-[#322929] p-5 rounded-xl  border-gray-200/50 dark:border-[#333]  ' >

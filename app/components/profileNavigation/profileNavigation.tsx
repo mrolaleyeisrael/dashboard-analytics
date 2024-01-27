@@ -23,7 +23,7 @@ const ProfileNavigation = () => {
 
   const { theme } = useTheme()
   return (
-    <div className=' absolute w-full text-black dark:bg-zinc-900/90 bg-white md:px-5 px-3 md:py-[18px] py-3 border-b dark:border-b-zinc-600/90 flex items-center justify-between  top-0 z-50  '>
+    <div className=' transition-all duration-200 ease-in absolute w-full text-black dark:bg-zinc-900/90 bg-white md:px-5 px-3 md:py-[18px] py-3 border-b dark:border-b-zinc-600/90 flex items-center justify-between  top-0 z-50  '>
 
       <h1 className=' lg:pl-20  dark:text-[#34CAA5] text-black lg:text-xl ' >Dashboard</h1>
 

@@ -11,7 +11,7 @@ import { NavigationItems, lowerNavigation, themeNavigation, themeNavigation2 } f
 const MobileNav = () => {
   const { theme, setTheme } = useTheme()
   return (
-    <div className=' absolute md:top-[82px] top-[58px] bottom-0 justify-center items-center left-0 lg:hidden grid grid-cols-3 gap-3 bg-[#F7F8FA]/95 dark:bg-zinc-900/90 w-full p-5 z-40 '>
+    <div className=' transition-all duration-200 ease-in absolute md:top-[82px] top-[58px] bottom-0 justify-center items-center left-0 lg:hidden grid grid-cols-3 gap-3 bg-[#F7F8FA]/95 dark:bg-zinc-900/90 w-full p-5 z-40 '>
 
       {NavigationItems.map((item) => (
 
