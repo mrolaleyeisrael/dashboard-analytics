@@ -35,4 +35,5 @@ import phillip from './phillip.svg'
 import jaydon from './jaydon.svg'
 import arrowDown2 from './arrowDown2.svg'
 import calendar2 from './calendar2.svg'
-export { arrowDown2, marcus, jaydon, phillip, corey, cooper, redChart, bell2, moon2, brightness2, greenChart, calendar2, arrowRight, arrowDown, ArrowDown, userImage, bell, calendar, box, logo, discount, category, moon, logout, trendUp, search, settings, profile, infoCircle, brightness, greenTrend, refund, order, cart, income, downTrend, blackCategory };
+import download from './document-download.svg'
+export { arrowDown2, marcus, jaydon, phillip, download, corey, cooper, redChart, bell2, moon2, brightness2, greenChart, calendar2, arrowRight, arrowDown, ArrowDown, userImage, bell, calendar, box, logo, discount, category, moon, logout, trendUp, search, settings, profile, infoCircle, brightness, greenTrend, refund, order, cart, income, downTrend, blackCategory };

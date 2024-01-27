@@ -9,6 +9,7 @@ import MobileNav from "./components/MobileNav";
 import { useStore, StoreState, useModalStore } from "./store/store";
 import ProfileMenu from "./components/profileMenu";
 import ModalComponent from "./components/ModalComponent";
+import CustomModal from "./components/CustomModal";
 export default function Home() {
 
   interface ModalStore {
@@ -48,7 +49,7 @@ export default function Home() {
 
         {
           isOpen &&
-          <ModalComponent />
+          <CustomModal />
         }
 
 

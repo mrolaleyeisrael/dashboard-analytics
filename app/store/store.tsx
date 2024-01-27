@@ -12,7 +12,7 @@ interface ModalStore {
 
 
 export const useModalStore = create((set) => ({
-  isOpen: true ,
+  isOpen: false ,
   toggleModal: () => set((state: ModalStore) => ({ isOpen: !state.isOpen })),
 }));
 

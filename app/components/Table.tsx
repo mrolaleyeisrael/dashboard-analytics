@@ -1,10 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
-import { userImage } from '../assets'
+import { userImage, download } from '../assets'
 import { orderData } from '../data/lastOrders'
 import { useModalStore } from "../store/store";
 
+
+interface ModalStore {
+  isOpen: boolean;
+  toggleModal: () => void;
+}
+
 const Table = () => {
+  const { isOpen, toggleModal } = useModalStore() as ModalStore;
+
   return (
     <div className=' h-fit overflow-auto lg:col-span-5 bg-white dark:bg-[#322929] p-5 rounded-xl  border-gray-200/50 dark:border-[#333]  ' >
 
@@ -34,7 +42,13 @@ const Table = () => {
                 <td className='px-4 py-3 whitespace-nowrap '>{order.date}</td>
                 <td className='px-4 py-3 text-black dark:text-white/90'>{order.amount}</td>
                 <td className={`${order.status == "Refund" ? 'text-[#ED544E]' : 'text-[#34CAA5]'} px-4 py-3`}>{order.status}</td>
-                <td className='px-4 py-3'>View</td>
+                <td className='px-4 py-3 cursor-pointer' onClick={toggleModal} >
+                  <Image src={download} alt='download' />
+                  <p>
+                    View
+                  </p>
+
+                </td>
               </tr>
             ))
           }
