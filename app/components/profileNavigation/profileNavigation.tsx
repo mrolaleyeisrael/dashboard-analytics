@@ -14,10 +14,7 @@ import { useStore, StoreState } from '@/app/store/store'
 
 const ProfileNavigation = () => {
 
-  const { toggleMenu } = useStore() as {
-    toggleMenu: () => void;
-
-  };
+  const { toggleMenu, toggleProfileMenu, profileMenu } = useStore() as StoreState
   const { openMenu }: StoreState = useStore() as StoreState;
 
 
@@ -48,8 +45,9 @@ const ProfileNavigation = () => {
           }
         </div>
 
-
+     
         <Profile />
+
 
         <div className=' lg:hidden h-5 w-5'>
 

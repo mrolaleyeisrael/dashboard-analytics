@@ -19,7 +19,7 @@ export default function Home() {
 
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
-  const { openMenu }: StoreState = useStore() as StoreState;
+  const { openMenu, profileMenu }: StoreState = useStore() as StoreState;
   const { isOpen, toggleModal } = useModalStore() as ModalStore;
 
 
@@ -51,9 +51,11 @@ export default function Home() {
           isOpen &&
           <CustomModal />
         }
+        {
+          profileMenu &&
 
-
-        {/* <ProfileMenu /> */}
+          <ProfileMenu />
+        }
       </main>
     </ThemeProvider>
   );

@@ -3,6 +3,8 @@ import { create } from "zustand";
 export interface StoreState {
   openMenu: boolean;
   profileMenu: boolean;
+  toggleMenu: () => void;
+  toggleProfileMenu: () => void;
 }
 
 interface ModalStore {
@@ -12,7 +14,7 @@ interface ModalStore {
 
 
 export const useModalStore = create((set) => ({
-  isOpen: false ,
+  isOpen: false,
   toggleModal: () => set((state: ModalStore) => ({ isOpen: !state.isOpen })),
 }));
 

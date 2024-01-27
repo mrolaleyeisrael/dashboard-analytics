@@ -17,7 +17,7 @@ const CustomModal = () => {
 
 
 
-      <div className=' max-h-[500px] max-w-md bg-zinc-900/90 p-5 rounded-lg relative '>
+      <div className=' max-h-[500px] h-[400px] w-[400px] max-w-md bg-zinc-900/90 p-5 rounded-lg relative '>
         <IoIosCloseCircleOutline onClick={toggleModal} className=' absolute top-4 right-4' />
 
         <div className=' mt-4'>

@@ -29,10 +29,10 @@ const MainPage = () => {
         </div>
       </section>
 
-      <section className=' transition-all duration-150 grid lg:grid-cols-9 grid-cols-1 w-full gap-5 px-5 lg:max-h-[420px] pb-5 '>
+      <section className=' transition-all duration-150 grid lg:grid-cols-9 grid-cols-1 w-full gap-5 px-5 lg:max-h-[420px] '>
         <Table />
-        <ModalComponent />
         <Progress />
+        
       </section>
 
 
