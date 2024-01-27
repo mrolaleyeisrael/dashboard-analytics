@@ -1,8 +1,10 @@
 import React from 'react'
 
+
+
 const ProfileMenu = () => {
   return (
-    <div className=' p-5 absolute top-[60px] z-40 w-[200px] right-8 rounded-lg bg-zinc-900/90   '>
+    <div className=' p-5 absolute lg:top-[100px] top-[60px] z-40 w-[200px] right-8 rounded-lg bg-zinc-900/90   '>
 
       Profile Menu
 

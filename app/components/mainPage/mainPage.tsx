@@ -18,7 +18,7 @@ const MainPage = () => {
       <section className=' grid lg:grid-cols-9 grid-cols-1 gap-5 p-5 text-black lg:max-h-[600px] w-full md:pt-28 pt-20  '>
 
         {/* chart container  */}
-        <div className='  w-full h-full lg:col-span-5 space-y-4 bg-white dark:bg-[#322929] shadow-md rounded-[14px] nd:px-[20px] px-2 pt-4 border border-gray-100/90 dark:border-[#333]  '>
+        <div className='  w-full h-full lg:col-span-5 space-y-4 bg-white dark:bg-[#322929] shadow-md rounded-[14px] md:px-[20px] px-2 -pb-4 pt-4 border border-gray-100/90 dark:border-[#333]  '>
           <BarChartHeadings />
           <BarCharts />
         </div>

@@ -27,7 +27,7 @@ const platForms = [
   },
 
   {
-    color: '#6160DC',
+    color: '#FF4A55',
     text: 'XStore',
     price: '$600,000',
     percent: '+5%',

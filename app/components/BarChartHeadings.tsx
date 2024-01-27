@@ -15,8 +15,8 @@ const BarChartHeadings = () => {
           <span className=' dark:text-white   ' >Weekly</span>
           {
             theme == 'dark' ?
+              <Image src={arrowDown2} alt='Drop Down Arrow' /> :
               <Image src={ArrowDown} alt='Drop Down Arrow' />
-              : <Image src={arrowDown2} alt='Drop Down Arrow' />
           }
 
         </button>

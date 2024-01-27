@@ -51,7 +51,7 @@ const ProfileNavigation = () => {
 
         <Profile />
 
-        <div className=' h-5 w-5'>
+        <div className=' lg:hidden h-5 w-5'>
 
           {openMenu ? <RiMenuFoldLine className=' w-full h-full dark:text-[#34cca5] ' onClick={toggleMenu} /> :
             <RiMenuUnfoldLine className=' w-full h-full dark:text-[#34cca5] ' onClick={toggleMenu} />
